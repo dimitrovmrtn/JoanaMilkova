@@ -1154,7 +1154,7 @@ footer i.fa-google:hover {
     margin: 0;
     width: 100%;
     padding: 0;
-    padding-top: 120px !important;
+    padding-top: 150px !important;
   }
   #about-main .info {
     -webkit-box-orient: vertical;
@@ -1221,6 +1221,9 @@ footer i.fa-google:hover {
   #navbar .flex {
     width: 100%;
     display: none;
+  }
+  #about-main {
+    padding-top: 60px !important;
   }
   .pametnik-predlojeniq {
     -webkit-box-orient: vertical;
@@ -1367,6 +1370,19 @@ footer i.fa-google:hover {
   }
   #pre-footer .links a {
     width: 50%;
+  }
+}
+
+@media (max-width: 499px) {
+  .card,
+  .card img {
+    width: 90vw !important;
+  }
+  .text {
+    font-size: 21px !important;
+  }
+  .info p {
+    font-size: 21px !important;
   }
 }
 

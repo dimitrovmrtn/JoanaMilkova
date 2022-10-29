@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // [...document.getElementsByClassName("sideMenuItem")].forEach((item) =>
-  //   item.addEventListener("click", () =>
-  //     document.querySelector(".toggler").click()
-  //   )
-  // );
+  [...document.getElementsByClassName("sideMenuItem")].forEach((item) =>
+    item.addEventListener("click", () =>
+      document.querySelector(".toggler").click()
+    )
+  );
   // document
   //   .querySelector(".toggler")
   //   .addEventListener("click", () =>

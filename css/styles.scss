@@ -963,7 +963,7 @@ footer {
     margin: 0;
     width: 100%;
     padding: 0;
-    padding-top: 120px !important;
+    padding-top: 150px !important;
     .info {
       flex-direction: column;
       width: 100%;
@@ -1036,6 +1036,10 @@ footer {
       width: 100%;
       display: none;
     }
+  }
+
+  #about-main {
+    padding-top: 60px !important;
   }
 
   .pametnik-predlojeniq {
@@ -1218,6 +1222,18 @@ footer {
   }
 }
 
+@media (max-width: 499px) {
+  .card,
+  .card img {
+    width: 90vw !important;
+  }
+  .text {
+    font-size: 21px !important;
+  }
+  .info p {
+    font-size: 21px !important;
+  }
+}
 @media (max-width: 399px) {
   #servicePage {
     .see-more a {
