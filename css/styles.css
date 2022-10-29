@@ -267,6 +267,20 @@ iframe {
   border-radius: 15px;
 }
 
+.text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 50px;
+  background: blanchedalmond;
+  font-size: 18px;
+  padding: 40px;
+  border-radius: 100px;
+}
+
 #about {
   margin: 40px;
   border-radius: 60px;
@@ -426,7 +440,6 @@ iframe {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-bottom: 60px;
   cursor: default !important;
 }
 
@@ -557,8 +570,9 @@ iframe {
   margin-bottom: 20px;
 }
 
-#contact .contact-content input[type="submit"] {
-  width: 25vw;
+#contact .contact-content button {
+  width: 150px;
+  height: 40px;
   margin: 0 auto;
   border-radius: 15px;
   color: #545151;
@@ -569,9 +583,15 @@ iframe {
   cursor: pointer;
 }
 
-#contact .contact-content input[type="submit"]:hover {
+#contact .contact-content button:hover {
   background: floralwhite;
   color: #545151;
+}
+
+#about-link {
+  visibility: hidden;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
 }
 
 footer {
@@ -841,11 +861,17 @@ footer i.fa-google:hover {
   text-align: center;
 }
 
-#about-main .info img {
+#about-main .info img:not(.icon) {
   display: block;
   width: 350px;
   border-radius: 15px;
   border: 10px solid #f0d994;
+}
+
+#about-main .info img.icon {
+  width: 20px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 #about-main .info p {
@@ -1007,8 +1033,8 @@ footer i.fa-google:hover {
   left: 50%;
   -webkit-transform: translateX(-150%) translateY(-50%);
           transform: translateX(-150%) translateY(-50%);
-  width: 100%;
-  height: 100%;
+  width: 101%;
+  height: 101%;
   background-color: rgba(0, 0, 0, 0.9);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1291,6 +1317,27 @@ footer i.fa-google:hover {
   }
 }
 
+@media (max-width: 440px) {
+  iframe,
+  #lol {
+    width: 130vw !important;
+    margin-bottom: 40px !important;
+  }
+  #lol2 {
+    width: 130vw !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin: 0 auto !important;
+  }
+  input,
+  textarea,
+  form {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+}
+
 @media (max-width: 599px) {
   #navbar a {
     font-size: 25px;
@@ -1309,11 +1356,8 @@ footer i.fa-google:hover {
 }
 
 @media (max-width: 500px) {
-  #contact .phones {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .ball {
+    display: none !important;
   }
   #pre-footer .links {
     -webkit-box-orient: vertical;
