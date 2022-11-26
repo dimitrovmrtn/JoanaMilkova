@@ -1151,11 +1151,12 @@ footer {
     display: flex !important;
     margin: 0 auto !important;
   }
-  input,
-  textarea,
-  form {
-    width: 100% !important;
-    margin: 0 auto !important;
+  #contact {
+    input,
+    textarea,
+    form {
+      width: 100% !important;
+    }
   }
 }
 

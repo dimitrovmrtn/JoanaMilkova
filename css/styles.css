@@ -1336,11 +1336,10 @@ footer i.fa-google:hover {
     display: flex !important;
     margin: 0 auto !important;
   }
-  input,
-  textarea,
-  form {
+  #contact input,
+  #contact textarea,
+  #contact form {
     width: 100% !important;
-    margin: 0 auto !important;
   }
 }
 
